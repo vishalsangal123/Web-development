@@ -1,0 +1,569 @@
+/*flex is used to create flexibke and responsive design 
+// flex try to put all container in single line at the direction of row or vertically and width of each container is decrease if u won't not happen this thing used flex-wrap
+//  wrap
+// justify content : flex-start,flex-end,center, space around space between
+display: inline-block does not add a line-break after the element, so the element can sit next to other elements.
+A block-level element always starts on a new line, and the browsers automatically add some space (a margin) before and after the element.
+
+A block-level element always takes up the full width available (stretches out to the left and right as far as it can).
+
+Two commonly used block elements are: <p> and <div>.
+An inline element does not start on a new line.
+
+An inline element only takes up as much width as necessary.
+
+This is a <span> element inside a paragraph
+
+    transition: color 0.5s, border-bottom 4s;
+
+    em, the unit is relative to the font size of its parent element, while the rem unit is only relative to the root font size of the HTML document
+
+    text-shadow: 8px 8px 8px yellow;
+    box-shadow : 8px 8px 8px 8px yellow;
+    overflow-wrap: break-word;
+
+*/
+body {
+    margin: 0px;
+}
+
+#body-header {
+    height: 80vh;
+    background-position: center;
+    background-image: url('F:\laptop.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    opacity: 0.8;
+}
+
+
+/* Horizontal Lists */
+
+.horizontal-list {
+    list-style: none;
+    padding-left: 0px;
+}
+
+#about {
+    height: auto;
+    position: relative;
+}
+
+#myself {
+    height: 12rem;
+    width: 12rem;
+    margin: auto;
+}
+
+#about p {
+    margin-left: 180px;
+    margin-right: 180px;
+    color: #2857a4;
+    font-size: 20px;
+    word-spacing: 5px;
+    font-weight: 100;
+}
+
+#myself img {
+    margin-top: -80px;
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    border: 5px solid white;
+    box-shadow: 0px 0px 2px 2px lightgray;
+}
+
+.horizontal-list li {
+    display: inline-block;
+    margin: 40px 18px 18px 0px;
+}
+
+.horizontal-list li a {
+    color: white;
+    transition: color 0.5s, border-bottom 4s;
+}
+
+.horizontal-list li a:hover {
+    color: lightgrey;
+    border-bottom: 1px solid white;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.vertical {
+    margin-top: -80px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.vertical li {
+    display: inline-block;
+    list-style: none;
+    margin-top: 40px;
+}
+
+.vertical li a {
+    padding: 20px;
+    border-radius: 50%;
+}
+
+.vertical li a:hover {
+    box-shadow: 0px 0px 6px 4px rgba(230, 196, 196, 0.3);
+}
+
+#name {
+    font-size: 60px;
+    text-align: center;
+    color: white;
+    font-weight: 400;
+    margin-top: 70px;
+}
+
+section {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+section:nth-child(2n) {
+    background-color: lightgray;
+}
+
+section:nth-child(2n+1) {
+    background-color: white;
+}
+
+.skill span {
+    display: inline-block;
+    font-weight: 400;
+    font-size: 40px;
+    color: #2875a4;
+    padding-top: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 10px;
+    text-shadow: 2px 2px 2px white;
+}
+
+.skills-display {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    flex-direction: row;
+    width: 40%;
+    margin-top: 3%;
+}
+
+.skills-progress {
+    height: 1.4rem;
+    width: 8rem;
+    margin-left: 25px;
+    margin-top: 28px;
+    margin-bottom: 40px;
+    border-radius: 15px;
+    border: 1px solid white;
+    background-color: lightgray;
+}
+
+.skills-progress>div {
+    border-radius: 20px 0px 0px 20px;
+}
+
+.skill-name span {
+    padding: 15px;
+    color: white;
+    font-size: 15px;
+}
+
+.mb-blue {
+    background-color: #2857a4;
+}
+
+.mb-yellow {
+    background-color: pink;
+}
+
+.eighty-five-percent {
+    height: inherit;
+    width: 25%;
+}
+
+.seventy-five-percent {
+    width: 75%;
+    height: inherit;
+}
+
+.forty-five-percent {
+    width: 45%;
+    height: inherit;
+}
+
+.mb-green {
+    background-color: greenyellow;
+}
+
+.fifty-five-percent {
+    width: 55%;
+    height: inherit;
+}
+
+.mb-red {
+    background-color: red;
+}
+
+.seventy-five-percent {
+    width: 75%;
+    height: inherit;
+}
+
+.mb-orange {
+    background-color: orange;
+}
+
+.thirty-five-percent {
+    width: 75%;
+    height: inherit;
+}
+
+.mb-black {
+    background-color: black;
+}
+
+
+/*
+.portfolio-image-container img {
+    height: 400px;
+    width: 300px;
+}
+
+#portfolio-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 0 50px;
+    margin-bottom: 20px;
+    width: 80%;
+}*/
+
+.porting {
+    display: inline-block;
+    font-weight: 400;
+    font-size: 40px;
+    color: #2875a4;
+    padding-top: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-shadow: 1px 1px 1px white;
+}
+
+.marg {
+    margin-left: 40%;
+}
+
+#logo::before {
+    content: ' ';
+    display: inline-block;
+    height: 70px;
+    width: 70px;
+    background-size: contain;
+    background-image: url(F:\strc.jfif);
+    border-radius: 50%;
+}
+
+#logo1::before {
+    content: ' ';
+    display: inline-block;
+    height: 70px;
+    width: 70px;
+    background-size: contain;
+    background-image: url(F:\graphic.jfif);
+    border-radius: 50%;
+}
+
+
+
+#certificate-head {
+    width: 75%;
+    margin-top: 5%;
+    /*border: 2px solid black;*/
+    position: relative;
+}
+
+#certificate-box {
+    min-height: 150px;
+    width: 40%;
+    /*border: 2px solid black;*/
+    margin: 5px;
+    position: relative;
+    left: 5%;
+}
+
+
+/* after means kissi cheez ka baad aayga i.e. inline ha or inline ma height or width define nhi kar sakta*/
+
+#certificate-box:nth-child(2n)::after {
+    content: '';
+    height: 0.5rem;
+    width: 0.5rem;
+    background-color: gainsboro;
+    border-radius: 50%;
+    position: absolute;
+    top: 35%;
+    left: -9.4%;
+    z-index: 1;
+}
+
+#certificate-box:nth-child(2n+1)::after {
+    content: '';
+    height: 0.5rem;
+    width: 0.5rem;
+    background-color: gainsboro;
+    border-radius: 50%;
+    position: absolute;
+    top: 30%;
+    right: -13.6%;
+    z-index: 1;
+}
+
+#certificate-main span {
+    display: inline-block;
+    font-weight: 400;
+    font-size: 40px;
+    color: #2875a4;
+    padding-top: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 10px;
+    text-shadow: 2px 2px 2px white;
+}
+
+#certificate-box:nth-child(2n) {
+    left: 53%;
+}
+
+.timeline-divider {
+    position: absolute;
+    height: 85%;
+    width: 0;
+    left: 50%;
+    top: 0%;
+    z-index: 1;
+    border: 2px dashed #0096fa6b;
+}
+
+.timeline-traveller {
+    position: sticky;
+    transform: rotate(90deg);
+    z-index: 2;
+    top: 19%;
+}
+
+#education-head {
+    width: 75%;
+    /*border: 2px solid black;*/
+    position: relative;
+    margin-bottom: 35px;
+    margin-top: 5%;
+}
+
+#education-box {
+    width: 40%;
+    /*  border: 2px solid black;*/
+    margin: 5px;
+    position: relative;
+    left: 5%;
+}
+
+#insname p {
+    font-size: 20px;
+    color: red;
+    text-shadow: 8px 8px 8px yellow;
+    overflow-wrap: break-word;
+}
+
+
+/* after means kissi cheez ka baad aayga i.e. inline ha or inline ma height or width define nhi kar sakta*/
+
+#education-main span {
+    display: inline-block;
+    font-weight: 400;
+    font-size: 40px;
+    color: #2875a4;
+    padding-top: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 10px;
+    text-shadow: 2px 2px 2px white;
+}
+
+#education-box h6 {
+    font-size: 25px;
+    color: purple;
+    margin-top: -5px;
+    margin-bottom: -5px;
+    text-shadow: 6px 6px 6px white;
+}
+
+#certificate-box h6 {
+    font-size: 25px;
+    color: purple;
+    margin-top: -5px;
+    margin-bottom: -5px;
+    text-shadow: 6px 6px 6px white;
+    overflow-wrap: break-word;
+}
+
+
+#education-box:nth-child(2n) {
+    left: 53%;
+}
+
+#project1 {
+    /*border: 2px solid black;*/
+    width: 75%;
+    position: relative;
+    margin-bottom: 35px;
+    margin-top: 5%;
+}
+
+#project-box {
+    margin: 20px;
+    min-height: 150px;
+    width: 40%;
+    /*border: 2px solid black;*/
+    position: relative;
+}
+
+#project-box:nth-child(2n) {
+    left: 55%;
+}
+
+#divison {
+    border: 2px dashed skyblue;
+    width: 0px;
+    height: 85%;
+    position: absolute;
+    left: 50%;
+    top: 5%;
+}
+
+#traveller {
+    position: sticky;
+    top: 10%;
+    transform: rotate(90deg);
+}
+
+#project-box h6 {
+    font-size: 25px;
+    color: purple;
+    margin-bottom: 30px;
+    text-shadow: 6px 6px 6px rgb(224, 18, 173);
+    overflow-wrap: break-word;
+    margin-left: 5px;
+    margin-top: 10px;
+}
+
+#insname a {
+    font-size: 18px;
+    color: rgb(255, 0, 212);
+    text-shadow: 5px 5px 5px rgb(0, 17, 255);
+    margin: 20px;
+}
+
+#contact1 {
+    background-image: linear-gradient(50deg, #2857a4 0%, #403066 74%);
+    color: white;
+    padding-bottom: 40px;
+}
+
+#contact-container {
+    display: flex;
+}
+
+#contact h1,
+#contact h1 span {
+    color: white;
+}
+
+#contact-form-container {
+    width: 50%;
+}
+
+#contact-form {
+    margin-left: 20%;
+}
+
+#contact-form input,
+textarea {
+    max-width: 90%;
+    margin: 15px;
+    padding: 4px 10px;
+    border: 0px solid transparent;
+    border-bottom: 2px solid white;
+    color: white;
+    background: transparent;
+    width: 90%;
+    line-height: 1.6;
+    font-size: 1.05rem;
+}
+
+#contact-form button[type="submit"] {
+    font-size: 15px;
+    border: 0px solid transparent;
+    margin-left: 40%;
+    background: transparent;
+    margin-top: 5%;
+    border: 2px solid white;
+    border-radius: 2px;
+    color: white;
+    font-family: sans-serif;
+    font-weight: 700;
+    letter-spacing: 0.046875em;
+    line-height: 1;
+    padding: 0.8em 0.8em 0.78em;
+    text-transform: uppercase;
+}
+
+#contact-form button[type="submit"]:hover {
+    color: #13386fe0;
+    background: white;
+}
+
+#my-details-container {
+    width: 35%;
+    margin-left: 6%;
+}
+
+#my-details-container h3 {
+    color: white;
+    font-weight: 550;
+    font-size: 1.2rem;
+}
+
+#my-details-container p {
+    color: white;
+    font-size: 0.9rem;
+}
+
+.my-details-info-container {
+    margin-bottom: 20px;
+    color: white;
+    font-size: 1rem;
+}
+
+.my-details-info-container span {
+    margin-left: 0.4rem;
+}
+
+.my-details-info-container i {
+    color: white;
+}
+
+#contact-form button:hover {
+    background: white;
+    color: #13386fe0;
+}
+
+#social-icon {
+    margin-top: 6%;
+}
